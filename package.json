@@ -1,0 +1,23 @@
+{
+  "name": "prompt-processing-system",
+  "version": "1.0.0",
+  "description": "Distributed prompt processing system with queueing, rate limiting, semantic caching, and crash recovery",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "worker": "node src/queue/worker.js"
+  },
+  "dependencies": {
+    "axios": "^1.9.0",
+    "bullmq": "^5.49.1",
+    "dotenv": "^16.5.0",
+    "express": "^4.21.2",
+    "ioredis": "^5.6.1",
+    "mongoose": "^8.13.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
